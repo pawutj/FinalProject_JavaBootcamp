@@ -13,6 +13,7 @@ public class Truck {
     private Long id;
     private double latitude;
     private double longitude;
+    private boolean isTravel;
 
     @OneToOne
     private CashBox cashBox;

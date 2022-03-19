@@ -1,5 +1,6 @@
 package finalproject.cashtracking.qrcode.entities;
 
+import finalproject.cashtracking.rcts.entities.CashBox;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -15,5 +16,8 @@ public class QRCode {
 
     @Enumerated(EnumType.STRING)
     private QRCodeType qrCodeType;
+
+    @OneToOne
+    private CashBox cashBox;
 
 }

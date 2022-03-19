@@ -1,5 +1,6 @@
 package finalproject.cashtracking.rcts.entities;
 
+import finalproject.cashtracking.qrcode.entities.QRCode;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -17,5 +18,8 @@ public class CashBox {
     private Truck truck;
 
     private Long userCreatedId;
+
+    @OneToOne
+    private QRCode qrCode;
 
 }
